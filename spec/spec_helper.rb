@@ -3,11 +3,12 @@ require 'capybara'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 
-Capybara.register_driver :poltergeist do |app|
-  Capybara::Poltergeist::Driver.new(app, js_errors: false)
-end
+# Capybara.register_driver :poltergeist do |app|
+#   Capybara::Poltergeist::Driver.new(app, js_errors: false)
+# end
 
 Capybara.default_driver = :poltergeist
+Capybara.default_driver = :selenium unless ENV['BROWSER'].nil?
 Capybara.run_server = false
 Capybara.app_host = 'http://rbctoday.com'
 
