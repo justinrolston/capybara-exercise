@@ -1,6 +1,7 @@
 class HomePage < SitePrism::Page
-  set_url "http://www.google.com"
+  set_url 'http://en.wikipedia.org'
 
-  element :search_field, "input[name='q']"
-  element :search_button, "button#gbqfb.gbqfb"
+  element :search_field, "input#searchInput"
+  element :search_button, "input#searchButton"
+  element :page_heading, "h1#firstHeading"
 end

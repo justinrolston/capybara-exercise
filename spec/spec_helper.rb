@@ -11,7 +11,7 @@ Capybara.default_driver = :poltergeist
 Capybara.default_driver = :selenium unless ENV['BROWSER'].nil?
 Capybara.javascript_driver = :selenium
 Capybara.run_server = false
-Capybara.app_host = 'https://www.google.com'
+Capybara.app_host = 'http://en.wikipedia.org'
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
