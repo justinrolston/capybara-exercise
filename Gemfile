@@ -5,3 +5,4 @@ gem "pry"
 gem 'capybara'
 gem 'poltergeist'
 gem 'selenium-webdriver'
+gem 'launchy'
