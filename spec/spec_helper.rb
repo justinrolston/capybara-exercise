@@ -3,10 +3,11 @@ require 'capybara'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 
+
 # Capybara.register_driver :poltergeist do |app|
 #   Capybara::Poltergeist::Driver.new(app, js_errors: false)
 # end
-# 
+#
 # If you want to use chromedriver
 # Capybara.register_driver :selenium_chrome do |app|
 #     Capybara::Selenium::Driver.new(app, :browser => :chrome)
